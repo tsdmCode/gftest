@@ -3,10 +3,198 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- ! Husk nu at ændre titlen -->
-    <title>Document</title>
+    <title>BrianAir</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="./assets/js/index.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header id="global-header">
+      <img id="hero" src="./assets/images/Hero-Image-Brianair-Interiur.jpg" alt="" />
+      <img id="logo" src="./assets/images/BrianAir-Logo.svg" alt="" />
+    </header>
+    <nav id="global-nav">
+      <ul>
+        <li><a href="#">FORSIDE</a></li>
+        <li><a href="#section-one">DESTINATION</a></li>
+        <li><a href="#section-three">OM BRIANAIR</a></li>
+        <li><a href="#global-footer">KONTAKT</a></li>
+      </ul>
+      <ul id="sign">
+        <li><a href="#">SIGNIN</a></li>
+        <li><a href="javascript:void();" onclick="window.myModal.show()">SIGNUP</a></li>
+      </ul>
+      <dialog id="myModal">
+        <form id="signupform" onsubmit="submitForm(event)">
+          <label for="firstname" aria-label="First name">Fornavn:</label>
+          <input id="firstname" name="firstname" type="text" placeholder="Indtast dit fornavn" />
+
+          <label for="lastname" aria-label="Last name">Efternavn:</label>
+          <input id="lastname" name="lastname" type="text" placeholder="Indtast dit efternavn" />
+
+          <label for="email" aria-label="Email">Email:</label>
+          <input id="email" name="email" type="email" placeholder="Indtast din email" />
+
+          <label for="password" aria-label="Password">Password:</label>
+          <input id="password" name="password" type="password" placeholder="Indtast dit password" />
+
+          <label for="passwordRepeat" aria-label="Password">Gentag password:</label>
+          <input id="passwordRepeat" name="passwordRepeat" type="password" placeholder="Indtast dit password igen" />
+
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Fortryd" />
+          <button onclick="window.myModal.close()">Luk form</button>
+        </form>
+      </dialog>
+    </nav>
+    <main>
+      <header>
+        <h1>Destination Juni 2025</h1>
+      </header>
+      <section id="section-one">
+        <figure>
+          <video src="./assets/images/Uploads/Island.mp4" autoplay muted loop></video>
+          <figcaption>
+            <article>
+              <h2>Réunion Island</h2>
+              <p>
+                <strong>Øst for Madagaskar</strong>
+                , og Vest for Mauritius ligger det tropiske paradis Réunion Island. Øen er et Fransk Departement.
+              </p>
+              <p>
+                Réunion er et multikulturelt samfund sammensat af mennesker oprindeligt fra Frankrig, Mozambique,
+                Indien, Kina, Madagaskar og Comorerne. Hovedsprogene er Creolsk og Fransk. Og møntfoden er Euro.
+              </p>
+              <p>
+                Den ophavsmæssige mangfoldigheden sætter især sit tydelige præg på det lokale "Creolske" køkken. Øens
+                "Cirques", Piton del la Furnaise, imponerende vandfald og de fascinerende lava-tunneller er unikke for
+                Réunion
+              </p>
+              <p>
+                Kolonitiden har efterladt farverige, velbevarede bygninger, og den livlige kulturelle blanding smitter
+                af på både sproget og i køkkenet. Juni til august er den tørreste periode, hvor der også er mindre
+                varmt.
+              </p>
+              <footer><a href="#">Læs Mere:</a></footer>
+            </article>
+          </figcaption>
+        </figure>
+      </section>
+      <section id="section-two">
+        <h2>Indtryk fra Réunion</h2>
+        <div id="imgGallery">
+          <img src="./assets/images/Uploads/Reunion-Island-01.jpg" alt="" />
+          <img src="./assets/images/Uploads/Reunion-Island-02.jpg" alt="" />
+          <img src="./assets/images/Uploads/Reunion-Island-03.jpg" alt="" />
+          <img src="./assets/images/Uploads/Reunion-Island-04.jpg" alt="" />
+          <img src="./assets/images/Uploads/Reunion-Island-05.jpg" alt="" />
+          <img src="./assets/images/Uploads/Reunion-Island-06.jpg" alt="" />
+          <img src="./assets/images/Uploads/Reunion-Island-07.jpg" alt="" />
+          <img src="./assets/images/Uploads/Reunion-Island-08.jpg" alt="" />
+        </div>
+      </section>
+      <section id="section-three">
+        <h2>Om BrianAir</h2>
+        <div id="slider">
+          <img id="mainpic" src="./assets/images/Plane-In-Sunset.jpg" alt="Fly der flyver i en solnedgang" />
+          <button class="w3-button w3-black w3-display-left sliderbutton">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right sliderbutton">&#10095;</button>
+        </div>
+        <div id="cards">
+          <figure class="card">
+            <img src="/assets/images/Check-in.jpg" alt="en hånd holder et pas frem" />
+            <figcaption>
+              <h3>TjekIn</h3>
+              <p>
+                Hvis du har reserveret en plads på forhånd, kan du tjekke ind online op til 60 dage før planlagt
+                afrejse. Dine udgående og indgående flyafgange skal dog være inden for de 60 dage fra afrejse.
+              </p>
+              <p>
+                Hvis du ikke har reserveret en plads, og du tildeles en tilfældigt, åbner tjek-ind 24 timer før afrejse
+                og lukker 2 timer før.
+              </p>
+              <footer><a href="">Mere:</a></footer>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="/assets/images/Planes.jpg" alt="et fly der står, man kan se ind i en af turbinerne" />
+            <figcaption>
+              <h3>Flyene</h3>
+              <p>
+                BrianAir fokuserer på en flåde bestående hovedsageligt af én flytype: selskabet har per 2021 over 450
+                narrow body-fly af typen Boeing 737.
+              </p>
+              <p>
+                De nye CFM56 turbofan-motorer, som med forbedret ydeevne, mindre brændstofforbrug og langt mindre
+                støjforurening.
+              </p>
+              <footer><a href="">Mere:</a></footer>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="./assets/images/Crew.jpg" alt="Et smilende crew i en flykabine" />
+            <figcaption>
+              <h3>Crew</h3>
+              <p>
+                Kabinepersonel er ansvarlige for passagerernes sikkerhed og komfort ombord på flyet, og derfor anvender
+                BrianAir kun uddannet personale i besætningen.
+              </p>
+              <p>
+                Alle besætningsmedlemmer er certificerede og udannede indenfor gældende standarder. Vi ser frem til at
+                give dig en god oplevelse.
+              </p>
+              <footer><a href="">Mere:</a></footer>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <footer id="global-footer">
+      <ul>
+        <li><h4>BRIANAIR</h4></li>
+        <li><p>Esplanaden 50</p></li>
+        <li><p>1098 Copenhagen K</p></li>
+        <li>
+          <a href="tel:22445066"><p>+45 2244 5066</p></a>
+        </li>
+        <li>
+          <a href="mailto:info@brianair.dk"><p>Email: info@brianair.dk</p></a>
+        </li>
+      </ul>
+      <ul>
+        <li><h4>INFORMATION:</h4></li>
+        <li><p>Spanske Bank, 9245 6543 7698</p></li>
+        <li><p>Betalingsbetingelser: 30 dage.</p></li>
+        <li><p>CVR Nr. 34632430</p></li>
+        <li>
+          <a href="mailto:money@brianair.dk"><p>money@brianair.dk</p></a>
+        </li>
+      </ul>
+      <ul>
+        <h4>EXTERNE LINKS</h4>
+        <ul id="socials">
+          <li>
+            <a href="https://www.facebook.com/brianair9e90/" target="_blank">
+              <img src="./assets/images/SoMe-Fb.svg" alt="Facebook logo" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/brianair9e90/">
+              <img src="./assets/images/SoMe-Insta.svg" alt="instagram logo" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/brianair9e90/">
+              <img src="./assets/images/SoMe-YouTube.svg" alt="youtube logo" />
+            </a>
+          </li>
+        </ul>
+      </ul>
+    </footer>
+  </body>
 </html>
