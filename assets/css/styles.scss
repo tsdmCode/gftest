@@ -34,6 +34,10 @@ $contentfontstack: Montserrat, sans-serif;
   box-sizing: border-box;
 }
 
+span {
+  font-weight: bold;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $headerfontstack;
   font-weight: 600;

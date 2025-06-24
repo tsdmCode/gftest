@@ -101,7 +101,8 @@ const decrement = () => {
   } else {
     currentIndex--;
   }
-  heroImage.src = imgArr[currentIndex];
+  heroImage.src = imgArr[currentIndex].source;
+  heroImage.alt = imgArr[currentIndex].alt;
 };
 
 buttons[0].addEventListener('click', increment);
