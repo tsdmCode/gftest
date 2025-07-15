@@ -370,6 +370,14 @@ form > input[type=reset]:hover {
   #imgGallery {
     grid-template-columns: 1fr 1fr;
   }
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
   .card {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;

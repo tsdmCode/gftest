@@ -105,8 +105,8 @@ const decrement = () => {
   heroImage.alt = imgArr[currentIndex].alt;
 };
 
-buttons[0].addEventListener('click', increment);
-buttons[1].addEventListener('click', decrement);
+buttons[1].addEventListener('click', increment);
+buttons[0].addEventListener('click', decrement);
 
-buttons[0].addEventListener('touch', increment);
-buttons[1].addEventListener('touch', decrement);
+buttons[1].addEventListener('touch', increment);
+buttons[0].addEventListener('touch', decrement);
